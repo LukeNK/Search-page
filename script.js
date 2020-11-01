@@ -1,4 +1,6 @@
 let GREET;
+let HTMLSEARCHBOXMARGINTOP , HTMLLINKSCONTENT;
+
 //Clock
 function clock() {
   var today = new Date();
@@ -47,6 +49,17 @@ function extraClock()
   }
 };
 
+function menuBtnOnClick() //devoke by menuOnClick()
+{
+  document.getElementById('clock').style.display = 'none';
+  document.getElementById('clockExtra').style.display = 'none';
+  document.getElementById('menuBtn').style.display = 'none';
+  document.getElementById('searchBox').style.display = 'none';
+  document.getElementById('links').style.display = 'none';
+
+  document.getElementById('menu').style.display = 'block';
+}
+
 function onLoadCaller()
 {
   clock();
@@ -76,3 +89,16 @@ function onLoadCaller()
     }
   });
 };
+
+
+//Menu
+function menuOnClick()
+{
+  document.getElementById('clock').style.display = '';
+  document.getElementById('clockExtra').style.display = '';
+  document.getElementById('menuBtn').style.display = '';
+  document.getElementById('searchBox').style.display = '';
+  document.getElementById('links').style.display = '';
+
+  document.getElementById('menu').style.display = 'none';
+}

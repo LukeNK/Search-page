@@ -9,23 +9,23 @@
     <script src="script.js"></script>
   </head>
 
-  <body onload="onLoadCaller()">
+  <body onload="onLoadCaller()" id="body">
     <div class='top' id='top'>
       <p id="clock">clock</p> <br>
       <p id="clockExtra">extra</p>
-      <button id="menuBtn">
+      <button id="menuBtn" onclick="menuBtnOnClick()">
         &#9632  &#9632  &#9632<br>
         &#9632  &#9632  &#9632<br>
         &#9632  &#9632  &#9632<br>
       </button>
     </div>
 
-    <div class="search">
+    <div class="search" id="search">
       <input type="text" name="searchBox" placeholder="Search the web" 
       id="searchBox"/>
     </div>
 
-    <div class="links">
+    <div class="links" id="links">
       <table class="linksContainer">
         <colgroup>
           <col span="1" style="width: 33%;">
@@ -50,6 +50,11 @@
       </table>
     </div>
   </body>
+
+  <!--Overlay menu-->
+  <div id="menu" onclick="menuOnClick()">
+    <p>Chotto matte ^^</p>
+  </div>
 
   <!--Credit: Frameworks and code
   -->
