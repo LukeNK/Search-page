@@ -6,7 +6,7 @@ Download it to your laptop and link it to new tab (with chrome user, you need to
 
 ## Roadmap
 - [ ] Menu window (the things on the upper right conner) 
-+ [ ] Smooth animation 
+  - [ ] Smooth animation 
 - [ ] Make cookies 
 - [ ] Enhance performance 
 - [ ] Code clean up
