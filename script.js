@@ -66,12 +66,13 @@ function onLoadCaller()
         {
           'wiki' : `https://en.wikipedia.org/w/index.php?search=${inp[1]}`,
           'trans' : `https://translate.google.com/?hl=en&sl=auto&tl=en&text=&op=translate${inp[1]}`,
-          'yt' : `https://www.youtube.com/results?search_query=${inp[1]}&page&utm_source=opensearch`
+          'yt' : `https://www.youtube.com/results?search_query=${inp[1]}&page&utm_source=opensearch`,
+          'web' : `https://${inp[1]}`
         };
 
         (inp[0] in keywords)? end = keywords[inp[0]] : {};
       }
       document.location = end; //redirect
     }
-  });  
+  });
 };
