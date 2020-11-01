@@ -1,0 +1,13 @@
+footer
+{
+  aritst
+}
+menu
+{
+  full screen links
+  selections
+}
+node server //for things such suc as custom links using cookies
+{
+  c
+}
