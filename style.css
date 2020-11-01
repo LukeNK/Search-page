@@ -1,0 +1,101 @@
+body
+{
+  background-color: #414141;
+  background-image: url(./Data/bg.jpg);
+  background-size: cover;
+  color: #f0f0f0;
+  font-family: 'Comfortaa', cursive;
+  font-size: 25px;
+}
+
+a , a:visited
+{
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+.top
+{
+  display: flex;
+}
+
+#clockExtra
+{
+  margin-left: 8px;
+}
+
+#menuBtn
+{
+  margin-left: auto; margin-right: 10px;
+  background-color: transparent; 
+  color: #f0f0f0; opacity: 70%;
+  border-style: none; outline-style: none;
+
+  transition: all 0.4s;
+}
+#menuBtn:hover
+{
+  opacity: 100%;
+}
+
+#searchBox 
+{
+  width: 40%;
+  margin-left: 30%; margin-top: 15%;
+
+  background-color: #272727;
+  color: #f0f0f0;
+  opacity: 75%;
+
+  font-size: 25px;
+  /*padding-inline-start: 10px;*/
+
+  border-style: solid; border-radius: 20px;
+  border-width: 5px 5px 5px 5px;
+  border-color: #272727;
+  
+  /*-webkit-transition: width 0.4s , margin-left 0.4s;*/
+  transition: width 0.4s, margin-left 0.4s, margin-top 0.4s, margin-bottom 0.4s, 
+  opacity 1s, background-color 0.4s, box-shadow 0.4s,
+  border-style 0.4s;
+}
+#searchBox:focus
+{
+  outline: none;
+  width: 60%;
+  opacity: 90%;
+  margin-left: 20%; margin-top: 0%; margin-bottom: 20%;
+  border-radius: 0px;
+}
+#searchBox:hover
+{
+  outline: none;
+  width: 60%;
+  margin-left: 20%;
+  box-shadow: 5px 10px #414141;
+}
+
+.links
+{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.linksContainer
+{
+  font-size: 20px; line-height: 1.6; text-align: center;
+  border-width: 0px; border-style: solid; border-color: #f0f0f0;
+  width: 50%; 
+  margin-left: 25%;
+  background-color: #414141; opacity: 50%;
+
+  transition: all 0.4s;
+}
+.linksContainer:hover
+{
+  /*border-width: 2px;*/
+  font-size: 25px;
+  width: 98%;
+  margin-left: 1%; 
+  background-color: transparent; opacity: 100%;
+}
