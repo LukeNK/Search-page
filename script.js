@@ -49,7 +49,7 @@ function extraClock()
   }
 };
 
-function menuBtnOnClick() //devoke by menuOnClick()
+function menuBtnOnClick() //devoke by menuClose()
 {
   document.getElementById('clock').style.display = 'none';
   document.getElementById('clockExtra').style.display = 'none';
@@ -58,8 +58,11 @@ function menuBtnOnClick() //devoke by menuOnClick()
   document.getElementById('links').style.display = 'none';
 
   document.getElementById('menu').style.display = 'block';
+
+  document.getElementById('menuTopMessage').innerHTML = 'Menu | ' + GREET;
 }
 
+// Actual flow
 function onLoadCaller()
 {
   clock();
@@ -93,7 +96,7 @@ function onLoadCaller()
 
 
 //Menu
-function menuOnClick()
+function menuClose()
 {
   document.getElementById('clock').style.display = '';
   document.getElementById('clockExtra').style.display = '';
