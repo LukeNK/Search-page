@@ -81,7 +81,7 @@ function onLoadCaller()
         let keywords = 
         {
           'wiki' : `https://en.wikipedia.org/w/index.php?search=${inp[1]}`,
-          'trans' : `https://translate.google.com/?hl=en&sl=auto&tl=en&text=&op=translate${inp[1]}`,
+          'trans' : `https://translate.google.com/?hl=en&sl=auto&tl=en&text=${inp[1]}&op=translate`,
           'yt' : `https://www.youtube.com/results?search_query=${inp[1]}&page&utm_source=opensearch`,
           'web' : `https://${inp[1]}`,
           '$dict' : `https://www.vocabulary.com/dictionary/${inp[1]}`
